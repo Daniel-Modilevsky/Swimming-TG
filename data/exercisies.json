@@ -1,0 +1,54 @@
+[
+    {
+        "count": 1,
+        "distance": 25,
+        "multiple" : "Freestyle",
+        "step" : "Worm Up",
+        "tempo": "Easy",
+        "break": 10,
+        "isPullbuoys": false,
+        "isFins": false,
+        "isHandPaddles": false,
+        "isKickBoards": false,
+        "details": "none"
+    },
+    {
+        "count": 1,
+        "distance": 25,
+        "multiple" : "Freestyle",
+        "step" : "Main Set",
+        "tempo": "Easy",
+        "break": 10,
+        "isPullbuoys": false,
+        "isFins": false,
+        "isHandPaddles": false,
+        "isKickBoards": false,
+        "details": "none"
+    },
+    {
+        "count": 1,
+        "distance": 25,
+        "multiple" : "Freestyle",
+        "step" : "Swim Down",
+        "tempo": "Easy",
+        "break": 10,
+        "isPullbuoys": false,
+        "isFins": false,
+        "isHandPaddles": false,
+        "isKickBoards": false,
+        "details": "none"
+    },
+    {
+        "count": 1,
+        "distance": 25,
+        "multiple" : "Freestyle",
+        "step" : "Race",
+        "tempo": "Easy",
+        "break": 10,
+        "isPullbuoys": false,
+        "isFins": false,
+        "isHandPaddles": false,
+        "isKickBoards": false,
+        "details": "none"
+    }
+]
