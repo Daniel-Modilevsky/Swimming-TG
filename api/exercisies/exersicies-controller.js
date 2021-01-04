@@ -21,7 +21,7 @@ const middlewareExcerciseId = async function(req, res, next) {
         }
     }
     catch(error){
-        message = 'Error - Problem find movie';
+        message = 'Error - Problem find excercise';
         logger.error(message);
         return res.status(401).json({message});
     }
@@ -31,7 +31,7 @@ const getAllexcercises = async function(req, res){
         logger.info('getAllexcercises');
         const excercisies = await Excercise.find();
         logger.info(`founded ${excercisies.length} excercisies`);
-        return res.status(200).json(movies);
+        return res.status(200).json(excercisies);
     }
     catch(error){
         message = 'Error - Failed searching for all excercisies';
@@ -55,23 +55,23 @@ const createExcercise = async function(req, res){
             logger.error('Error - Missing Params - can not complete valis creation without (count & distance & multiple ) params');
             return res.status(400).send('Error - Missing Params - can not complete valis creation without (count & distance & multiple ) params');
         }
-        let newExcercise = {
-            id: mongoose.Types.ObjectId(),
+        let newExcercise = new Excercise ({
+            _id: mongoose.Types.ObjectId(),
             count: req.body.count,
             distance: req.body.distance,
             multiple: req.body.multiple,
-        };
-        if(req.params.step) newExcercise.step = req.params.step;
-        if(req.params.tempo) newExcercise.tempo = req.params.tempo;
-        if(req.params.break) newExcercise.break = req.params.break;
-        if(req.params.isPullbuoy) newExcercise.isPullbuoy = req.params.isPullbuoy;
-        if(req.params.rate) newExcercise.isFins = req.params.isFins;
-        if(req.params.rate) newExcercise.isHandPaddles = req.params.isHandPaddles;
-        if(req.params.rate) newExcercise.isKickBoard = req.params.isKickBoard;
+        });
+        if(req.body.step) newExcercise.step = req.body.step;
+        if(req.body.tempo) newExcercise.tempo = req.body.tempo;
+        if(req.body.break) newExcercise.break = req.body.break;
+        if(req.body.isPullbuoy) newExcercise.isPullbuoy = req.body.isPullbuoy;
+        if(req.body.isFins) newExcercise.isFins = req.body.isFins;
+        if(req.body.isHandPaddles) newExcercise.isHandPaddles = req.body.isHandPaddles;
+        if(req.body.isKickBoard) newExcercise.isKickBoard = req.body.isKickBoard;
 
 
-        const excercise = await Excercise.findById({id:newExcercise.id});
-        if(!newExcercise){
+        const excercise = await Excercise.findById({_id:newExcercise._id});
+        if(!excercise){
             newExcercise.save();
             logger.info(`Success - Created New Excercise ${newExcercise}`);
             return res.status(200).json(newExcercise);

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const trainSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    exercisies: { type: [Schema.Types.ObjectId], ref: 'Excercise', require: true  }, 
+    exercisies: { type: [mongoose.Schema.Types.ObjectId], ref: 'Excercise', require: true  }, 
     totalDistance: { type: Number, min: 25, max: 10000, require: true }, 
     name: { type: String, default: 'none' }, 
     date: { type: Date, default: Date.now() }, 

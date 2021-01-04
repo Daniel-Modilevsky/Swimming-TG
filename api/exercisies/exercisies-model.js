@@ -5,7 +5,7 @@ const excerciseSchema = mongoose.Schema({
 
     count: { type: Number,enum: [1, 2, 3, 4, 5, 6, 7 , 8 , 9, 10], require: true },
     distance: { type: Number, enum: [25, 50, 100, 200, 400], require: true }, 
-    multiple: { type: [String],enum: ["Freestyle", "Breaststroke", "Butterfly","BeckStroke", "Mix"], require: true }, 
+    multiple: { type: [String], enumValues: ["Freestyle", "Breaststroke", "Butterfly","BeckStroke", "Mix"], require: true }, 
     details: { type: String , default: 'none'},
 
     step: { type: String ,enum:["Worm Up", "Main Set", "Swim Down", "Race"], default: "Worm Up"},

@@ -1,0 +1,18 @@
+2021.01.02, 19:49:04.0537 UTC -> Error : Error - Failed searching for all excercisies + ReferenceError: movies is not defined
+
+2021.01.02, 20:03:03.0818 UTC -> Error : Error - Failed searching for all excercisies + ReferenceError: movies is not defined
+
+2021.01.02, 20:17:01.0694 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.02, 20:18:02.0764 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.01.02, 20:23:05.0295 UTC -> Error : Error - Faild Create new Excercise : CastError: Cast to ObjectId failed for value "{ id: 5ff0d629f41271076c527d4b }" at path "_id" for model "Excercise"
+
+2021.01.02, 20:24:19.0881 UTC -> Error : Error - Faild Create new Excercise : CastError: Cast to ObjectId failed for value "{ id: null }" at path "_id" for model "Excercise"
+
+2021.01.02, 20:24:33.0491 UTC -> Error : Error - Faild Create new Excercise : CastError: Cast to ObjectId failed for value "{ id: '5ff0d6813afe5108c8d12691' }" at path "_id" for model "Excercise"
+
+2021.01.02, 20:25:48.0994 UTC -> Error : Error - Excercise already exist
+
+2021.01.03, 19:03:35.0469 UTC -> Error : You went into a 404 problem - Please try a valid route
+

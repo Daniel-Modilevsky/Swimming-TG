@@ -28,9 +28,8 @@ const middlewareTrainId = async function(req, res, next) {
 };
 const getAllTrains = async function(req, res){
     try{
-        logger.info('getAllTrains');
         const trains = await Train.find();
-        logger.info(`founded ${trains.length} Comments`);
+        logger.info(`founded ${trains.length} trains`);
         return res.status(200).json(trains);
     }
     catch(error){

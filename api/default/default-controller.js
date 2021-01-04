@@ -11,7 +11,7 @@ module.exports = {
     },
     index : (req, res) => {
         logger.info('Hey and welcome to first Ex!');
-        res.status(200).json({ message: 'Hey and welcome to first Ex!' });
+        res.status(200).json({ message: 'Hey and welcome to Swimming TG!' });
     },
     routeInvalid : (req, res) => {
         logger.error('You went into a 404 problem - Please try a valid route');

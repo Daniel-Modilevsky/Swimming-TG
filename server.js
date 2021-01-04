@@ -6,6 +6,7 @@ const { initConnection } = require('./lib/mongoose');
 
 try{
     initConnection();
+
     const server = http.createServer(app);
     server.listen(config.PORT, () => logger.info(`Lisining to Server : ${config.PORT}`));
 }
