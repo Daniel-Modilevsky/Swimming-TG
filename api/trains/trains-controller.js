@@ -47,7 +47,6 @@ const getTrain = async function(req, res){
     }
     catch (error) {return res.status(400).json({error});}
 };
-
 const createTrain = async function(req, res){
     try{
         logger.info('createTrain');

@@ -16,3 +16,21 @@
 
 2021.01.03, 19:03:35.0469 UTC -> Error : You went into a 404 problem - Please try a valid route
 
+2021.01.04, 21:11:09.0220 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.04, 21:15:56.0635 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.01.05, 20:18:01.0730 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.05, 20:18:12.0971 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.06, 09:51:10.0251 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+
+2021.01.06, 09:51:37.0051 UTC -> Error : Error - Problem find excercise
+
+2021.01.06, 09:51:40.0972 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.06, 09:51:42.0693 UTC -> Error : Error - Problem find excercise
+
+2021.01.06, 17:33:31.0508 UTC -> Error : You went into a 404 problem - Please try a valid route
+
