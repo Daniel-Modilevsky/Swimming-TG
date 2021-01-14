@@ -3,15 +3,11 @@ const { middlewareTrainId, getAllTrains, getTrain, createTrain, updateTrain, del
 let router = express.Router();
 
 
-//Middlewares
-router.use('/api/trains/:id', middlewareTrainId);
-
-
 //Routes
 router.get('/api/trains/', getAllTrains)
       .post('/api/trains/', createTrain);
-router.get('/api/trains/:id', getTrain)
-      .put('/api/trains/:id', updateTrain)
-      .delete('/api/trains/:id', deleteTrain);
+router.get('/api/trains/:id', middlewareTrainId,getTrain)
+      .put('/api/trains/:id', middlewareTrainId,updateTrain)
+      .delete('/api/trains/:id', middlewareTrainId,deleteTrain);
 
 module.exports = router;

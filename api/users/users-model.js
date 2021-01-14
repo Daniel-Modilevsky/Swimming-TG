@@ -7,6 +7,7 @@ const userSchema = mongoose.Schema({
     email: { type: String, require: true },
     password: { type: String, require: true },
     trainsHistory: { type: [mongoose.Schema.Types.ObjectId], ref: 'Train' },
+    image: {type: String },
     isAdmin: { type: Boolean, default: false },
     isDeleted: { type: Boolean, default: false }
 },{ collection: 'users'});

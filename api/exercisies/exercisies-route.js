@@ -1,17 +1,19 @@
 const express = require('express');
-const { middlewareExcerciseId, getAllexcercises, getExcercise, createExcercise, updateExcercise, deleteExcercise  } = require('./exersicies-controller');
+const { middlewareExcerciseId, getAllexcercises, getExcercise, createExcercise, updateExcercise, deleteExcercise, getByStep, sendParamsRandom  } = require('./exersicies-controller');
 let router = express.Router();
 
 
 //Middlewares
-router.use('/api/excercisies/:id', middlewareExcerciseId);
+router.get('/api/step/:stepName', getByStep); 
 
 
 //Routes
 router.get('/api/excercisies/', getAllexcercises)
       .post('/api/excercisies/', createExcercise);
-router.get('/api/excercisies/:id', getExcercise)
-      .put('/api/excercisies/:id', updateExcercise)
-      .delete('/api/excercisies/:id', deleteExcercise);
+router.get('/api/excercisies/:id',middlewareExcerciseId, getExcercise)
+      .put('/api/excercisies/:id',middlewareExcerciseId, updateExcercise)
+      .delete('/api/excercisies/:id',middlewareExcerciseId, deleteExcercise);
+router.post('/api/random/', sendParamsRandom);
+
 
 module.exports = router;

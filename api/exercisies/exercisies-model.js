@@ -8,7 +8,7 @@ const excerciseSchema = mongoose.Schema({
     multiple: { type: [String], enumValues: ["Freestyle", "Breaststroke", "Butterfly","BackStroke", "Mix"], require: true }, 
     details: { type: String , default: 'none'},
 
-    step: { type: String ,enum:["Warm Up", "Main Set", "Swim Down", "Race"], default: "Warm Up"},
+    step: { type: String ,enumValues:["Warm Up", "Main Set", "Swim Down", "Race"], default: "Warm Up"},
     tempo: { type: String ,enum:["Easy", "Medium", "Hard"], default: "Easy"},
     break: { type: Number,  enum: [10, 15, 20, 30, 45, 60], default: 10},
 

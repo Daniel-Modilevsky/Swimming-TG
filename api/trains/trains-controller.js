@@ -9,14 +9,13 @@ let message = '';
 const middlewareTrainId = async function(req, res, next) {
     try{
         const { id } = req.params;
-        const train = await Train.findById({id});
+        const train = await Train.findOne({_id: id});
         if(!train){
-            message = 'Error - Ctrainomment not exist';
+            message = 'Error - train not exist';
             logger.error(message);
             return res.status(401).json({message});
         }
         else{
-            logger.info(`Success - founded the train`);
             next();
         }
     }
@@ -41,9 +40,8 @@ const getAllTrains = async function(req, res){
 const getTrain = async function(req, res){
     try{
         logger.info('getTrain');
-        const train = await Train.findById({ id: req.params.id });
-        logger.info(train);
-        return res.status(200).json({message});
+        const train = await Train.findById({ _id: req.params.id });
+        return res.status(200).json({train});
     }
     catch (error) {return res.status(400).json({error});}
 };
@@ -54,10 +52,10 @@ const createTrain = async function(req, res){
             logger.error('Error - Missing Params - can not complete valis creation without (exercisies & totalDistance)  params');
             return res.status(400).send('Error - Missing Params - can not complete valis creation without (exercisies & totalDistance) params');
         }
-        let newTrain = { id: mongoose.Types.ObjectId(), exercisies: req.body.exercisies, totalDistance: req.body.totalDistance };
-        if(req.params.name) newTrain.name = req.params.name;
-        if(req.params.date) newTrain.date = req.params.date;
-        const train = await Train.findById({id:newTrain.id});
+        let newTrain = new Train({ _id: mongoose.Types.ObjectId(), exercisies: req.body.exercisies, totalDistance: req.body.totalDistance });
+        if(req.body.name) newTrain.name = req.body.name;
+        if(req.body.date) newTrain.date = req.body.date;
+        const train = await Train.findById({_id:newTrain._id});
         if(!train){
             newTrain.save();
             logger.info(`Success - Created New Train ${newTrain}`);
@@ -100,4 +98,4 @@ const deleteTrain = async function(req, res){
     }
     catch (error) {return res.status(400).json({error});}
 };
-module.exports =  { middlewareTrainId, getAllTrains, getTrain, createTrain, updateTrain, deleteTrain  };
+module.exports =  { middlewareTrainId, getAllTrains, getTrain, createTrain, updateTrain, deleteTrain };

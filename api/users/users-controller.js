@@ -8,14 +8,13 @@ let message = '';
 const checkId = async function(req, res, next) {
     try{
         const { id } = req.params;
-        const user = await User.findById({id});
+        const user = await User.findById({_id: id});
         if(!user){
             message = 'Error - User not exist';
             logger.error(message);
             return res.status(401).json({message});
         }
         else{
-            logger.info(`Success - founded the User`);
             next();
         }
     }
@@ -40,7 +39,7 @@ const getAllUsers = async function(req, res){
 };
 const getUser = async function(req, res){
     try{
-        const user = await User.findById({ id: req.params.id });
+        const user = await User.findById({ _id: req.params.id });
         logger.info(`user detail is: ${user.user_name}`);
         return res.status(200).json({user});
     }
@@ -49,10 +48,14 @@ const getUser = async function(req, res){
 const updateUser = async function(req, res){
     try{
         logger.info('updateUser');
-        const user = await User.findById({ id: req.params.id });
-        if (req.body.user_name) user.user_name = req.body.user_name;
-        if (req.body.email) user.email = req.body.email;
-        User.update({ id: user.id });
+        const user = await User.findById({ _id: req.params.id });
+        let trains = [];
+        trains = user.trainsHistory;
+        trains.push(req.body.train);
+        user.trainsHistory = trains;
+        //let path = req.file.path.replace('\\','/'); 
+        //if (req.body.image) user.image =path;
+        user.save();
         logger.info(user);
         return res.status(200).json({user});
     }
@@ -61,7 +64,7 @@ const updateUser = async function(req, res){
 const deleteUser = async function(req, res){
     try{
         logger.info('deleteUser');
-        const user = await User.findById({ id: req.params.id });
+        const user = await User.findById({ _id: req.params.id });
         if (user.isDeleted == false) user.isDeleted = true;
         User.update({ id: user.id });
         logger.info(user);

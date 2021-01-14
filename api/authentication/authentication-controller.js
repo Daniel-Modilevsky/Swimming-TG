@@ -24,12 +24,23 @@ const checkEmail = function (req, res, next) {
 };
 const signup = async function (req, res) {
     try{
+        logger.debug(`file - ${req.file.path}`);
+        logger.debug(`file - ${req.file}`);
+        logger.debug(`file - ${req}`);
+
         if (!req.body.user_name || !req.body.password || !req.body.email || !req.body.password2) {
             message = "Error - Missing Params -(user_name, password, email) are required params and can not be empty";
             logger.error(message);
             return res.status(401).json({ message });
         }
-        let newUser = new User({ _id: mongoose.Types.ObjectId(),  user_name: req.body.user_name, password: bcrypt.hashSync(req.body.password, 10), email: req.body.email });
+        logger.debug();
+        let newUser = new User({ 
+            _id: mongoose.Types.ObjectId(),
+              user_name: req.body.user_name,
+              password: bcrypt.hashSync(req.body.password, 10),
+              email: req.body.email,
+              image: req.file.path.replace('\\','/')
+             });
         const user = await User.findOne({ user_name: newUser.user_name });
         if (!user) {
             newUser.save();
