@@ -1,457 +1,16 @@
-2021.01.02, 19:49:04.0537 UTC -> Error : Error - Failed searching for all excercisies + ReferenceError: movies is not defined
+2021.01.15, 07:02:02.0664 UTC -> Error : You went into a 404 problem - Please try a valid route
 
-2021.01.02, 20:03:03.0818 UTC -> Error : Error - Failed searching for all excercisies + ReferenceError: movies is not defined
+2021.01.15, 07:04:31.0398 UTC -> Error : error - testUserRead - Error: connect ECONNREFUSED 127.0.0.1:80
 
-2021.01.02, 20:17:01.0694 UTC -> Error : You went into a 404 problem - Please try a valid route
+2021.01.15, 07:04:45.0532 UTC -> Error : error - testUserRead - Error: connect ECONNREFUSED 127.0.0.1:80
 
-2021.01.02, 20:18:02.0764 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
+2021.01.15, 08:58:54.0358 UTC -> Error : error - testUserRead - TypeError: Cannot read property 'json' of undefined
 
-2021.01.02, 20:23:05.0295 UTC -> Error : Error - Faild Create new Excercise : CastError: Cast to ObjectId failed for value "{ id: 5ff0d629f41271076c527d4b }" at path "_id" for model "Excercise"
+2021.01.16, 09:17:43.0719 UTC -> Warn : [object Promise][object Promise][object Promise]
 
-2021.01.02, 20:24:19.0881 UTC -> Error : Error - Faild Create new Excercise : CastError: Cast to ObjectId failed for value "{ id: null }" at path "_id" for model "Excercise"
+2021.01.16, 09:17:44.0329 UTC -> Warn : allExercises[num]
 
-2021.01.02, 20:24:33.0491 UTC -> Error : Error - Faild Create new Excercise : CastError: Cast to ObjectId failed for value "{ id: '5ff0d6813afe5108c8d12691' }" at path "_id" for model "Excercise"
-
-2021.01.02, 20:25:48.0994 UTC -> Error : Error - Excercise already exist
-
-2021.01.03, 19:03:35.0469 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.04, 21:11:09.0220 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.04, 21:15:56.0635 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
-
-2021.01.05, 20:18:01.0730 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.05, 20:18:12.0971 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.06, 09:51:10.0251 UTC -> Error : Error - Missing Params -(user_name, password, email) are required params and can not be empty
-
-2021.01.06, 09:51:37.0051 UTC -> Error : Error - Problem find excercise
-
-2021.01.06, 09:51:40.0972 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.06, 09:51:42.0693 UTC -> Error : Error - Problem find excercise
-
-2021.01.06, 17:33:31.0508 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.08, 19:11:43.0829 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.09, 07:15:01.0468 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:15:12.0819 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:19:51.0771 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:20:03.0413 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:20:41.0320 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:21:26.0575 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:21:53.0145 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:22:01.0291 UTC -> Error : Error - Problem find excercise
-
-2021.01.09, 07:22:44.0799 UTC -> Error : Error - Problem find excercise = CastError: Cast to ObjectId failed for value "{ id: '5ff0d6f6b29d031d6ced6d6c' }" at path "_id" for model "Excercise"
-
-2021.01.09, 08:12:27.0763 UTC -> Error : Error - Problem find excercise = CastError: Cast to ObjectId failed for value "{ _id: '5ff0d6f6b29d031d6ced6d6c,' }" at path "_id" for model "Excercise"
-
-2021.01.09, 08:12:37.0052 UTC -> Error : Error - Problem find excercise = CastError: Cast to ObjectId failed for value "{ _id: '5ff0d6f6b29d031d6ced6d6c,' }" at path "_id" for model "Excercise"
-
-2021.01.09, 09:32:08.0990 UTC -> Error : Error - Problem find excercise = CastError: Cast to ObjectId failed for value "{ _id: '5ff0d6f6b29d031d6ced6d6c, ' }" at path "_id" for model "Excercise"
-
-2021.01.09, 09:38:47.0930 UTC -> Error : Error - Problem find excercise = CastError: Cast to ObjectId failed for value "{ _id: '5ff0d6f6b29d031d6ced6d6c,' }" at path "_id" for model "Excercise"
-
-2021.01.09, 21:39:19.0213 UTC -> Error : Error - Missing Params - can not complete valis creation without (exercisies & totalDistance)  params
-
-2021.01.09, 21:46:54.0713 UTC -> Error : Error - Missing Params - can not complete valis creation without (exercisies & totalDistance)  params
-
-2021.01.09, 21:48:06.0099 UTC -> Error : Error - Missing Params - can not complete valis creation without (exercisies & totalDistance)  params
-
-2021.01.10, 15:18:17.0034 UTC -> Error : Error - Missing Params - can not complete valis creation without (exercisies & totalDistance)  params
-
-2021.01.10, 15:19:19.0230 UTC -> Error : Error - Missing Params - can not complete valis creation without (exercisies & totalDistance)  params
-
-2021.01.10, 17:11:03.0746 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.10, 17:11:17.0493 UTC -> Error : Error - Ctrainomment not exist
-
-2021.01.10, 17:12:42.0891 UTC -> Error : Error - train not exist
-
-2021.01.11, 19:29:07.0671 UTC -> Error : Error - Problem find train
-
-2021.01.12, 18:07:02.0282 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.12, 20:55:17.0898 UTC -> Error : Error - Problem find User
-
-2021.01.12, 20:55:44.0638 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.12, 20:56:11.0394 UTC -> Error : Error - Problem find User
-
-2021.01.12, 20:56:34.0005 UTC -> Error : Error - Problem find User
-
-2021.01.13, 08:43:25.0143 UTC -> Error : Error - can not create this user - TypeError: Cannot read property 'path' of undefined
-
-2021.01.13, 08:45:06.0885 UTC -> Error : Error - Problem find train
-
-2021.01.13, 08:47:44.0928 UTC -> Error : Error - can not create this user - TypeError: Cannot read property 'path' of undefined
-
-2021.01.13, 09:17:41.0066 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 09:19:11.0501 UTC -> Error : Error - Problem find User
-
-2021.01.13, 19:17:54.0909 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.13, 19:17:55.0293 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.13, 19:18:14.0363 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.13, 19:19:11.0253 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.13, 19:19:47.0798 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.13, 19:20:15.0956 UTC -> Error : Error - Problem find User
-
-2021.01.13, 19:20:15.0981 UTC -> Error : Error - Problem find User
-
-2021.01.13, 19:20:18.0660 UTC -> Error : Error - Problem find User
-
-2021.01.13, 19:21:38.0587 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.13, 19:26:53.0699 UTC -> Error : Error - can not create this user - TypeError: Cannot read property 'path' of undefined
-
-2021.01.13, 19:26:59.0144 UTC -> Error : Error - can not create this user - TypeError: Cannot read property 'path' of undefined
-
-2021.01.13, 19:35:10.0064 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:35:13.0892 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:35:34.0039 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:35:48.0038 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:40:14.0040 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:40:16.0943 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:43:25.0057 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:43:25.0773 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:43:35.0868 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:43:39.0369 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.13, 19:49:43.0569 UTC -> Error : Error - Problem find train
-
-2021.01.13, 19:50:04.0166 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:32:30.0685 UTC -> Warn : {
-  trainsHistory: [],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ffeb1532cd4b52f2c1fff85,
-  user_name: 'Daniel_Modilevsky',
-  password: '$2b$10$IhbUQrsPDv1dEkFjYPsx3OLhPtKibWPj0DyxSBs4g9lH0tXygSK8S',
-  email: 'daniel.model@gmail.com',
-  image: 'public/1610527059752-profile-img.jpg',
-  __v: 0
-}
-
-2021.01.13, 20:35:58.0847 UTC -> Warn : {
-  trainsHistory: [],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ffeb1532cd4b52f2c1fff85,
-  user_name: 'Daniel_Modilevsky',
-  password: '$2b$10$IhbUQrsPDv1dEkFjYPsx3OLhPtKibWPj0DyxSBs4g9lH0tXygSK8S',
-  email: 'daniel.model@gmail.com',
-  image: 'public/1610527059752-profile-img.jpg',
-  __v: 0
-}
-
-2021.01.13, 20:39:04.0773 UTC -> Warn : {
-  trainsHistory: [],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ffeb1532cd4b52f2c1fff85,
-  user_name: 'Daniel_Modilevsky',
-  password: '$2b$10$IhbUQrsPDv1dEkFjYPsx3OLhPtKibWPj0DyxSBs4g9lH0tXygSK8S',
-  email: 'daniel.model@gmail.com',
-  image: 'public/1610527059752-profile-img.jpg',
-  __v: 0
-}
-
-2021.01.13, 20:39:06.0204 UTC -> Warn : {
-  trainsHistory: [ 5ffcac62e5bbc00e046d92e6 ],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ffeb1532cd4b52f2c1fff85,
-  user_name: 'Daniel_Modilevsky',
-  password: '$2b$10$IhbUQrsPDv1dEkFjYPsx3OLhPtKibWPj0DyxSBs4g9lH0tXygSK8S',
-  email: 'daniel.model@gmail.com',
-  image: 'public/1610527059752-profile-img.jpg',
-  __v: 1
-}
-
-2021.01.13, 20:42:21.0608 UTC -> Warn : {
-  trainsHistory: [ 5ffcac62e5bbc00e046d92e6, 5ffcac62e5bbc00e046d92e6 ],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ffeb1532cd4b52f2c1fff85,
-  user_name: 'Daniel_Modilevsky',
-  password: '$2b$10$IhbUQrsPDv1dEkFjYPsx3OLhPtKibWPj0DyxSBs4g9lH0tXygSK8S',
-  email: 'daniel.model@gmail.com',
-  image: 'public/1610527059752-profile-img.jpg',
-  __v: 2
-}
-
-2021.01.13, 20:42:48.0552 UTC -> Error : Error - User not exist
-
-2021.01.13, 20:42:54.0665 UTC -> Warn : {
-  trainsHistory: [
-    5ffcac62e5bbc00e046d92e6,
-    5ffcac62e5bbc00e046d92e6,
-    5ffb542fe5bbc00e046d92e4
-  ],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ffeb1532cd4b52f2c1fff85,
-  user_name: 'Daniel_Modilevsky',
-  password: '$2b$10$IhbUQrsPDv1dEkFjYPsx3OLhPtKibWPj0DyxSBs4g9lH0tXygSK8S',
-  email: 'daniel.model@gmail.com',
-  image: 'public/1610527059752-profile-img.jpg',
-  __v: 3
-}
-
-2021.01.13, 20:43:10.0901 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:43:50.0388 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:45:47.0884 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:46:06.0826 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:46:25.0260 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:46:33.0722 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:46:38.0490 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:47:08.0549 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:47:57.0448 UTC -> Error : Error - Problem find train
-
-2021.01.13, 20:50:38.0705 UTC -> Warn : {
-  trainsHistory: [],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ff0d53dbeace3359897e29d,
-  user_name: 'max',
-  password: '$2b$10$9w3ZCIGvZPlBeMl1uLBSPufFJ8mUowBsZzoe3uNJ2ctft5.QUaiJi',
-  email: 'max@gmail.com',
-  __v: 0
-}
-
-2021.01.13, 20:50:38.0760 UTC -> Error : Error - train not exist
-
-2021.01.13, 20:52:07.0265 UTC -> Warn : {
-  trainsHistory: [ 5fff5d1dde675a14b4091e1a ],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ff0d53dbeace3359897e29d,
-  user_name: 'max',
-  password: '$2b$10$9w3ZCIGvZPlBeMl1uLBSPufFJ8mUowBsZzoe3uNJ2ctft5.QUaiJi',
-  email: 'max@gmail.com',
-  __v: 1
-}
-
-2021.01.13, 21:03:21.0711 UTC -> Error : Error - Problem find train
-
-2021.01.13, 21:04:02.0095 UTC -> Error : Error - Problem find train
-
-2021.01.13, 21:07:59.0482 UTC -> Warn : {
-  trainsHistory: [ 5fff5d1dde675a14b4091e1a, 5fff5d76de675a14b4091e1b ],
-  isAdmin: false,
-  isDeleted: false,
-  _id: 5ff0d53dbeace3359897e29d,
-  user_name: 'max',
-  password: '$2b$10$9w3ZCIGvZPlBeMl1uLBSPufFJ8mUowBsZzoe3uNJ2ctft5.QUaiJi',
-  email: 'max@gmail.com',
-  __v: 2
-}
-
-2021.01.14, 05:20:45.0578 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:20:45.0755 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:20:45.0905 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:20:46.0077 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:21:01.0078 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:21:01.0247 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:21:01.0415 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:21:01.0582 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:22:12.0427 UTC -> Error : Error - User not exist
-
-2021.01.14, 05:22:21.0234 UTC -> Error : Error - User not exist
-
-2021.01.14, 05:22:47.0171 UTC -> Error : Error - User not exist
-
-2021.01.14, 05:22:47.0245 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.14, 05:23:23.0966 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:23:23.0975 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:23:23.0991 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:23:24.0003 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:25:10.0004 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:25:10.0014 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:25:10.0020 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:25:10.0036 UTC -> Error : Error - Problem find train
-
-2021.01.14, 05:26:45.0644 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:27:17.0898 UTC -> Error : Error - train not exist
-
-2021.01.14, 05:59:56.0914 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:00:24.0569 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:00:36.0400 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:15:36.0749 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:16:28.0009 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:16:39.0567 UTC -> Error : Error - User not exist
-
-2021.01.14, 06:16:44.0228 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:17:00.0583 UTC -> Error : You went into a 404 problem - Please try a valid route
-
-2021.01.14, 06:18:49.0427 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:18:56.0528 UTC -> Error : Error - train not exist
-
-2021.01.14, 06:19:45.0170 UTC -> Error : Error - train not exist
-
-2021.01.14, 07:09:18.0128 UTC -> Error : Error - train not exist
-
-2021.01.14, 07:10:26.0981 UTC -> Error : Error - train not exist
-
-2021.01.14, 07:10:44.0272 UTC -> Error : Error - train not exist
-
-2021.01.14, 07:10:58.0707 UTC -> Error : Error - train not exist
-
-2021.01.14, 07:11:32.0317 UTC -> Error : Error - train not exist
-
-2021.01.14, 07:32:50.0922 UTC -> Error : Error - train not exist
-
-2021.01.14, 09:40:37.0338 UTC -> Error : Error - train not exist
-
-2021.01.14, 09:49:43.0158 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:13:19.0405 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:14:12.0953 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:14:22.0665 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:16:28.0241 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:17:08.0029 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:17:44.0146 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:18:11.0418 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:18:50.0528 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:19:33.0251 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:19:46.0064 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:19:57.0741 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:20:25.0532 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:20:35.0156 UTC -> Error : Error - Problem find train
-
-2021.01.14, 10:20:38.0511 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:20:48.0876 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:21:21.0810 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:21:24.0750 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:22:51.0365 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:24:08.0429 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:24:10.0924 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:24:30.0767 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:24:39.0221 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:24:57.0229 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:25:27.0665 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:25:41.0459 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:25:55.0938 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:26:20.0017 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:26:22.0835 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:26:33.0435 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:26:47.0747 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:27:35.0244 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:28:08.0654 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:28:53.0060 UTC -> Error : Error - train not exist
-
-2021.01.14, 10:29:27.0383 UTC -> Error : Error - User Unauthorized Access
-
-2021.01.14, 10:33:11.0269 UTC -> Error : Error - can not create this user - TypeError: Cannot read property 'path' of undefined
-
-2021.01.14, 10:46:35.0234 UTC -> Error : Error - can not create this user - TypeError: Cannot read property 'path' of undefined
-
-2021.01.14, 22:15:14.0076 UTC -> Warn : [object Promise][object Promise][object Promise]
-
-2021.01.14, 22:17:10.0239 UTC -> Warn : [object Promise][object Promise][object Promise]
-
-2021.01.14, 22:17:11.0068 UTC -> Warn : allExercises[num]
-
-2021.01.14, 22:17:11.0070 UTC -> Warn : undefined
-
-2021.01.14, 22:17:48.0810 UTC -> Warn : [object Promise][object Promise][object Promise]
-
-2021.01.14, 22:18:38.0684 UTC -> Warn : [object Promise][object Promise][object Promise]
-
-2021.01.14, 22:20:03.0576 UTC -> Warn : [object Promise][object Promise][object Promise]
-
-2021.01.14, 22:20:03.0954 UTC -> Warn : allExercises[num]
-
-2021.01.14, 22:20:03.0964 UTC -> Warn : {
+2021.01.16, 09:17:44.0352 UTC -> Warn : {
   multiple: [ 'Freestyle' ],
   details: 'None',
   step: 'Main set',
@@ -467,4 +26,602 @@
   distance: 50,
   __v: 0
 }
+
+2021.01.16, 09:21:38.0409 UTC -> Warn : [object Promise]
+
+2021.01.16, 09:21:38.0901 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:21:38.0921 UTC -> Warn : {
+  multiple: [ 'Freestyle' ],
+  details: 'None',
+  step: 'Main set',
+  tempo: 'Medium',
+  break: 20,
+  isPullbuoy: true,
+  isFins: false,
+  isHandPaddles: true,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff4f239d3adc3332f56ec91,
+  count: 4,
+  distance: 50,
+  __v: 0
+}
+
+2021.01.16, 09:23:57.0977 UTC -> Warn : [object Promise]
+
+2021.01.16, 09:23:57.0999 UTC -> Error : error of randomExercise ReferenceError: totalWarmUp is not defined
+
+2021.01.16, 09:25:06.0172 UTC -> Warn : [object Promise]
+
+2021.01.16, 09:25:06.0679 UTC -> Error : workout type : undefined
+
+2021.01.16, 09:27:16.0028 UTC -> Warn : [object Promise]
+
+2021.01.16, 09:27:16.0541 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:27:16.0561 UTC -> Warn : {
+  multiple: [ 'Freestyle' ],
+  details: 'Sprint',
+  step: 'Main set',
+  tempo: 'Hard',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff4f271d3adc3332f56ec92,
+  count: 4,
+  distance: 50,
+  __v: 0
+}
+
+2021.01.16, 09:27:39.0803 UTC -> Warn : [object Promise]
+
+2021.01.16, 09:31:28.0949 UTC -> Warn : [object Promise]
+
+2021.01.16, 09:31:29.0413 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:31:29.0413 UTC -> Warn : undefined
+
+2021.01.16, 09:34:18.0212 UTC -> Warn : undefined
+
+2021.01.16, 09:34:18.0210 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:34:18.0223 UTC -> Warn : undefined
+
+2021.01.16, 09:37:49.0086 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:37:49.0111 UTC -> Warn : undefined
+
+2021.01.16, 09:37:49.0088 UTC -> Warn : undefined
+
+2021.01.16, 09:39:40.0790 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:39:40.0803 UTC -> Warn : undefined
+
+2021.01.16, 09:39:40.0810 UTC -> Warn : undefined
+
+2021.01.16, 09:39:55.0817 UTC -> Warn : {
+  multiple: [ 'Freestyle' ],
+  details: 'None',
+  step: 'Main set',
+  tempo: 'Medium',
+  break: 20,
+  isPullbuoy: true,
+  isFins: false,
+  isHandPaddles: true,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff4f239d3adc3332f56ec91,
+  count: 4,
+  distance: 50,
+  __v: 0
+}
+
+2021.01.16, 09:39:55.0795 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:39:55.0989 UTC -> Warn : undefined
+
+2021.01.16, 09:40:30.0825 UTC -> Warn : undefined
+
+2021.01.16, 09:40:39.0847 UTC -> Warn : undefined
+
+2021.01.16, 09:40:39.0846 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:40:39.0865 UTC -> Warn : undefined
+
+2021.01.16, 09:40:49.0815 UTC -> Warn : undefined
+
+2021.01.16, 09:41:27.0329 UTC -> Warn : allExercises[num]
+
+2021.01.16, 09:41:27.0348 UTC -> Warn : undefined
+
+2021.01.16, 09:41:27.0331 UTC -> Warn : undefined
+
+2021.01.16, 09:41:37.0561 UTC -> Warn : undefined
+
+2021.01.16, 13:50:09.0564 UTC -> Error : random - TypeError: Cannot read property 'forEach' of undefined
+
+2021.01.16, 13:51:10.0820 UTC -> Warn : allExercises[num]
+
+2021.01.16, 13:51:10.0843 UTC -> Warn : {
+  multiple: [ 'Freestyle' ],
+  details: 'None',
+  step: 'Main set',
+  tempo: 'Medium',
+  break: 20,
+  isPullbuoy: true,
+  isFins: false,
+  isHandPaddles: true,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff4f239d3adc3332f56ec91,
+  count: 4,
+  distance: 50,
+  __v: 0
+}
+
+2021.01.16, 13:51:11.0049 UTC -> Error : random - TypeError: Cannot read property 'forEach' of undefined
+
+2021.01.16, 13:52:11.0422 UTC -> Warn : allExercises[num]
+
+2021.01.16, 13:52:11.0453 UTC -> Warn : {
+  multiple: [ 'Freestyle' ],
+  details: 'Sprint',
+  step: 'Main set',
+  tempo: 'Hard',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff4f271d3adc3332f56ec92,
+  count: 4,
+  distance: 50,
+  __v: 0
+}
+
+2021.01.16, 13:52:11.0614 UTC -> Error : random - TypeError: Cannot read property 'forEach' of undefined
+
+2021.01.16, 13:52:58.0980 UTC -> Error : random - TypeError: Cannot read property 'forEach' of undefined
+
+2021.01.16, 14:02:08.0719 UTC -> Error : error - testUserRead - TypeError: response.forEach is not a function
+
+2021.01.16, 14:02:26.0946 UTC -> Error : error - testUserRead - TypeError: response.forEach is not a function
+
+2021.01.16, 14:44:22.0748 UTC -> Error : error - testExcerciseCreate - Error: Request failed with status code 400
+
+2021.01.16, 14:44:22.0927 UTC -> Error : error - testExcerciseCreate - Error: Request failed with status code 400
+
+2021.01.16, 14:44:22.0931 UTC -> Error : Failed - Excercise Component tests
+
+2021.01.16, 14:44:55.0059 UTC -> Error : error - testExcerciseUpdate - Error: Request failed with status code 400
+
+2021.01.16, 14:44:55.0253 UTC -> Error : error - testExcerciseDelete - Error: Request failed with status code 400
+
+2021.01.16, 14:44:55.0254 UTC -> Error : Failed - Excercise Component tests
+
+2021.01.16, 14:46:29.0527 UTC -> Error : error - testExcerciseUpdate - Error: Request failed with status code 400
+
+2021.01.16, 14:46:29.0699 UTC -> Error : error - testExcerciseDelete - Error: Request failed with status code 400
+
+2021.01.16, 14:46:29.0700 UTC -> Error : Failed - Excercise Component tests
+
+2021.01.16, 14:46:46.0326 UTC -> Error : error - testExcerciseUpdate - Error: Request failed with status code 400
+
+2021.01.16, 14:46:46.0509 UTC -> Error : error - testExcerciseDelete - Error: Request failed with status code 400
+
+2021.01.16, 14:46:46.0510 UTC -> Error : Failed - Excercise Component tests
+
+2021.01.16, 15:32:05.0289 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.16, 15:34:31.0724 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.16, 15:34:32.0439 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.16, 15:34:33.0923 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.16, 16:33:48.0273 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.16, 16:33:49.0276 UTC -> Error : You went into a 404 problem - Please try a valid route
+
+2021.01.16, 21:38:06.0611 UTC -> Warn : undefined
+
+2021.01.16, 21:38:51.0870 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:38:51.0885 UTC -> Warn : undefined
+
+2021.01.16, 21:39:27.0071 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:39:27.0550 UTC -> Warn : undefined
+
+2021.01.16, 21:41:13.0812 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:41:15.0271 UTC -> Warn : undefined
+
+2021.01.16, 21:45:09.0829 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:45:10.0459 UTC -> Warn : [object Promise]
+
+2021.01.16, 21:45:56.0274 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:45:56.0475 UTC -> Warn : [object Promise]
+
+2021.01.16, 21:46:58.0834 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:47:37.0765 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:48:13.0081 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:48:13.0302 UTC -> Warn : [object Promise]
+
+2021.01.16, 21:49:42.0072 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:49:42.0399 UTC -> Warn : undefined
+
+2021.01.16, 21:51:19.0225 UTC -> Error : 
+
+2021.01.16, 21:51:20.0724 UTC -> Warn : undefined
+
+2021.01.16, 21:51:31.0114 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:51:32.0583 UTC -> Warn : undefined
+
+2021.01.16, 21:54:03.0588 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:54:05.0092 UTC -> Warn : undefined
+
+2021.01.16, 21:54:33.0558 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.16, 21:55:14.0810 UTC -> Error : {
+  multiple: [ 'Freestyle' ],
+  details: 'none',
+  step: 'Warm up',
+  tempo: 'Medium',
+  break: 30,
+  isPullbuoy: false,
+  isFins: false,
+  isHandPaddles: false,
+  isKickBoard: false,
+  isDeleted: false,
+  _id: 5ff39927d5d9df6ada1f7498,
+  count: 1,
+  distance: 300,
+  __v: 0
+}
+
+2021.01.17, 15:35:09.0507 UTC -> Error : Error - Problem find User
+
+2021.01.17, 15:37:27.0009 UTC -> Error : Error - Problem find train
+
+2021.01.17, 16:24:45.0420 UTC -> Warn : 1
+
+2021.01.17, 16:24:45.0438 UTC -> Warn : object
+
+2021.01.17, 16:24:45.0440 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:26:16.0182 UTC -> Warn : 1
+
+2021.01.17, 16:26:16.0184 UTC -> Warn : object
+
+2021.01.17, 16:26:16.0196 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:32:29.0893 UTC -> Warn : 1
+
+2021.01.17, 16:32:29.0895 UTC -> Warn : object
+
+2021.01.17, 16:32:29.0909 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:33:06.0180 UTC -> Warn : 1
+
+2021.01.17, 16:33:06.0183 UTC -> Warn : object
+
+2021.01.17, 16:33:06.0194 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:34:28.0433 UTC -> Warn : 1
+
+2021.01.17, 16:34:28.0447 UTC -> Warn : object
+
+2021.01.17, 16:34:28.0451 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:36:00.0221 UTC -> Warn : 1
+
+2021.01.17, 16:36:00.0225 UTC -> Warn : object
+
+2021.01.17, 16:36:00.0236 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:37:05.0212 UTC -> Warn : 1
+
+2021.01.17, 16:37:05.0214 UTC -> Warn : object
+
+2021.01.17, 16:37:05.0228 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:46:12.0067 UTC -> Warn : 1
+
+2021.01.17, 16:46:12.0083 UTC -> Warn : 5ff39927d5d9df6ada1f7498
+
+2021.01.17, 16:46:12.0069 UTC -> Warn : object
+
+2021.01.17, 20:50:56.0683 UTC -> Error : Error - Problem find train
+
+2021.01.17, 20:51:25.0002 UTC -> Error : Error - Problem find train
+
+2021.01.19, 07:26:46.0532 UTC -> Error : Error - Problem find excercise = ReferenceError: error is not defined
+
+2021.01.19, 07:26:46.0710 UTC -> Error : Error - Problem find excercise = ReferenceError: error is not defined
+
+2021.01.19, 07:26:46.0884 UTC -> Error : Error - Problem find excercise = ReferenceError: error is not defined
+
+2021.01.20, 06:06:08.0868 UTC -> Error : Error - train not exist
+
+2021.01.20, 06:08:59.0963 UTC -> Error : Error - train not exist
+
+2021.01.20, 06:17:49.0743 UTC -> Error : Error - train not exist
+
+2021.01.20, 06:18:10.0119 UTC -> Error : Error - train not exist
+
+2021.01.20, 06:18:27.0538 UTC -> Error : Error - train not exist
+
+2021.01.20, 06:19:25.0911 UTC -> Error : Error - train not exist
+
+2021.01.20, 06:20:12.0970 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:30:06.0513 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:31:25.0697 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:32:06.0936 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:10.0613 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:10.0788 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:10.0979 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:11.0012 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:11.0017 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:11.0088 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:11.0162 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:28.0900 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:29.0092 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:29.0204 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:29.0220 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:29.0236 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:29.0376 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:29.0666 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:54.0404 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:54.0597 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:54.0739 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:54.0768 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:54.0843 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:54.0852 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:35:54.0917 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:02.0439 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:02.0660 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:02.0745 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:02.0776 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:02.0780 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:02.0835 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:02.0934 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:06.0384 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:06.0598 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:06.0767 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:06.0787 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:06.0839 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:06.0842 UTC -> Error : Error - train not exist
+
+2021.01.20, 08:36:06.0951 UTC -> Error : Error - train not exist
 

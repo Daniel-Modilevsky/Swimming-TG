@@ -3,6 +3,7 @@ const logger = require('../../lib/logs');
 const config = require('../../config/config-default');
 const Excercise = require('./exercisies-model');
 const Math = require('math');
+const localStorage = require('node-localstorage');
 
 let message = '';
 
@@ -90,19 +91,19 @@ const createExcercise = async function(req, res){
 const updateExcercise = async function(req, res){
     try{
         logger.info('updateExcercise');
-        const excercise = await Excercise.findById({ id: req.params.id });
-        if(req.params.count) excercise.count = req.params.count;
-        if(req.params.step) excercise.distance = req.params.distance;
-        if(req.params.step) excercise.multiple = req.params.multiple;
-        if(req.params.step) excercise.step = req.params.step;
-        if(req.params.tempo) excercise.tempo = req.params.tempo;
-        if(req.params.break) excercise.break = req.params.break;
-        if(req.params.isPullbuoy) excercise.isPullbuoy = req.params.isPullbuoy;
-        if(req.params.rate) excercise.isFins = req.params.isFins;
-        if(req.params.rate) excercise.isHandPaddles = req.params.isHandPaddles;
-        if(req.params.rate) excercise.isKickBoard = req.params.isKickBoard;
+        const excercise = await Excercise.findOne({ _id: req.params.id });
+        if(req.body.count) excercise.count = req.body.count;
+        if(req.body.step) excercise.distance = req.body.distance;
+        if(req.body.step) excercise.multiple = req.body.multiple;
+        if(req.body.step) excercise.step = req.body.step;
+        if(req.body.tempo) excercise.tempo = req.body.tempo;
+        if(req.body.break) excercise.break = req.body.break;
+        if(req.body.isPullbuoy) excercise.isPullbuoy = req.body.isPullbuoy;
+        if(req.body.isFins) excercise.isFins = req.body.isFins;
+        if(req.body.isHandPaddles) excercise.isHandPaddles = req.body.isHandPaddles;
+        if(req.body.isKickBoard) excercise.isKickBoard = req.body.isKickBoard;
 
-        Movie.update({ id: excercise.id });
+        Movie.update({ _id: excercise._id });
         logger.info(excercise);
         return res.status(200).json({excercise});
     }
@@ -111,7 +112,7 @@ const updateExcercise = async function(req, res){
 const deleteExcercise = async function(req, res){
     try{
         logger.info('deleteExcercise');
-        const excercise = await Excercise.findById({ id: req.params.id });
+        const excercise = await Excercise.findById({ _id: req.params._id });
         if (excercise.isDeleted == false) excercise.isDeleted = true;
         excercise.update({ id: excercise.id });
         logger.info(excercise);
@@ -129,162 +130,100 @@ const getByStep = async function(req, res){
     }
     catch (error) {return res.status(400).json({error});}
 }
+
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
-  }
-
-async function randomWarmupExercise(totalwu){
-    let firstExerciseWU = 0;
-    let secondExerciseWU = 0;
-    let results = [];
-
-    if(totalwu > 800){
-        firstExerciseWU = 800
-        secondExerciseWU = totalwu - firstExerciseWU
-    }
-    else {
-        firstExerciseWU = totalwu;
-    }
-    results = await Excercise.find({ step: "Warm up" });
-    let countFirstExercise = 0
-    let countSecondExercise = 0
-    let counter = 0
-    
-    let firstExerciseArray = []
-    let secondExerciseArray = []
-    let returnExerciseArray = []
-
-    results.forEach(result => {
-        if(result.distance * result.count == firstExerciseWU){
-            firstExerciseArray.push(result);
-            countFirstExercise += 1;
-        }
-        else if (secondExerciseWU != 0 && result.distance * result.count == secondExerciseWU){
-            secondExerciseArray.push(result);
-            countSecondExercise += 1;
-        }
-        counter += 1
-    });
-    let randFirstExercise = getRandomInt(countFirstExercise - 1)
-    returnExerciseArray.push(firstExerciseArray[randFirstExercise])
-    if (secondExerciseWU != 0){
-        randSecondExercise = getRandomInt(countSecondExercise - 1)
-        returnExerciseArray.push(secondExerciseArray[randSecondExercise]) 
-    }
-    return returnExerciseArray;
 }
+// New try to generic random function (3 in 1)
+async function randomExercises(totalExercisesDistance, exerciseStep) {
 
-async function randomWarmdownExercise(totalwu){
-    let results = await Excercise.find({ step: "Swim Down" });
-    let warmdowmExercises = []
-    let returnExercise = []
-    let countWarmdownExercise = 0;
+    try {
+        // findes all the relevant exercises
+        let results = await Excercise.find({ step: exerciseStep });
 
-    results.forEach(result => {
-        if(result.distance * result.count == totalwu){
-            warmdowmExercises.push(result);
-            countWarmdownExercise += 1;
-        }
-    });
+        // Counters
+        let counter = 0;
+        let exerciseCounter = 0;
 
-    let randomExercise = getRandomInt(countWarmdownExercise - 1);
-    returnExercise.push(warmdowmExercises[randomExercise])
+        // Arrays to save the exercises
+        let allExercises = [];
+        let returnExercises = [];
 
-    return returnExercise;
-}
-
-async function randomMainSetExerciseEq(totalMS, isPully , isKick, isPaddles, isFins){
-    let results = await Excercise.find({ step: "Main set" });
-    let counter = 0;
-    let mainSetCounter = 0;
-
-    let allExercises = [];
-    let mainsetExercises = [];
-
-    results.forEach(result => {
-        counter += 1
-        allExercises.push(result);
-    });
-
-    let totaltemp = 0;
-    let flag = false;
-
-    while(totaltemp < totalMS){
-        let num = getRandomInt(counter - 1)
-        mainsetExercises.push(allExercises[num])
-        mainSetCounter += 1
-
-        if((allExercises[num].isPullbuoy == true && isPully == true) || (allExercises[num].isKickBoard == true && isKick == true) || (allExercises[num].isHandPaddles == true && isPaddles == true) || (allExercises[num].isFins == true && isFins == true)){
-            flag = true;
-        }
-        totaltemp += (allExercises[num].distance * allExercises[num].count);
-        allExercises.slice(num);
-        // check if it do the work
-    }
-    if (totaltemp > totalMS){
-        let diff = totaltemp - totalMS;
-        mainsetExercises.pop();
-        let results2 = await Excercise.find({ step: "Main set" });
-        allExercises = [];
-        let newCounter = 0;
-
-        results2.forEach(result2 => {
-            if (result2.distance * result2.count == diff){
-                newCounter += 1;
-                allExercises.push(result2);
-            }
+        // Saves all the relevant exercises to an array
+        results.forEach(result => {
+            counter += 1;
+            allExercises.push(result);
         });
-        num = getRandomInt(newCounter - 1)
-        mainsetExercises.push(allExercises[num])
-        logger.warn(`allExercises[num]`);
-        logger.warn(allExercises[num]);
-        if((allExercises[num].isPullbuoy == true && isPully == true) || (allExercises[num].isKickBoard == true && isKick == true) || (allExercises[num].isHandPaddles == true && isPaddles == true) || (allExercises[num].isFins == true && isFins == true)){
-            flag = true;
+
+        // Temporary variable to count the exercises' distance
+        let totaltemp = 0;
+
+        while (totaltemp < totalExercisesDistance) {
+
+            // Saves random int
+            let num = getRandomInt(counter - 1);
+
+            // Chooses random exercise and pushes to the array
+            returnExercises.push(allExercises[num]);
+            exerciseCounter += 1;
+
+            // Sums the total distance that saved into the array
+            totaltemp += (allExercises[num].distance * allExercises[num].count);
+
+            // Removes the exercise that added from all exercises' array
+            allExercises.slice(num);
         }
-        if (flag == false){
-            let delRand = getRandomInt(mainSetCounter - 1);
-            let findDis = mainsetExercises[delRand].distance;
-            mainsetExercises.slice(num);
 
-            while (flag == false &&  newCounter > 0){
-                num = getRandomInt(newCounter - 1)
-                if((allExercises[num].isPullbuoy == true && isPully == true) || (allExercises[num].isKickBoard == true && isKick == true) || (allExercises[num].isHandPaddles == true && isPaddles == true) || (allExercises[num].isFins == true && isFins == true)&&(allExercises[num].distance == findDis) ){
-                    flag = true;
-                    mainsetExercises.push(allExercises[num])
+        // logger.warn(`totalExercisesDistance ${totalExercisesDistance}`);
+        // logger.warn(`totaltemp ${totaltemp}`);
+
+        // In case that the distance is higher than required
+        if (totaltemp > totalExercisesDistance) {
+
+            let temp = returnExercises.pop();
+
+            // logger.warn(`temp ${temp.distance * temp.count}`);
+            totaltemp -= (temp.distance * temp.count);
+
+            // logger.warn(`totaltemp after temp ${totaltemp}`);
+            let diff = totalExercisesDistance - totaltemp;
+
+            // logger.warn(`diff ${diff}`);
+            let i = 0;
+
+            // Empty the array
+            allExercises = [];
+
+            // Fills the array with the relevant exercises
+            results.forEach(result => {
+                counter += 1;
+                allExercises.push(result);
+            });
+
+            // Searches for exercise that will match the missing distance
+            while (allExercises.length > i) {
+                if (allExercises[i].distance * allExercises[i].count == diff) {
+                    returnExercises.push(allExercises[i]);
+                    totaltemp += (allExercises[i].distance * allExercises[i].count);
+                    // logger.warn(`totaltemp in if ${totaltemp}`);
+                    i = allExercises.length;
                 }
-                else{
-                    allExercises.slice(num);
-                    newCounter -= 1;
-                }
-        }   
+                i += 1;
+            }
+        }
+
+        return returnExercises;
     }
-    return mainsetExercises;
-}
-}
-function randomExercise(total, isPully , isKick, isPaddles, isFins){
-    try{
-        let totalWarmUp = total * 0.3;
-        let totalWarmDown = 0;
-        if (total < 2000)       totalWarmDown = 100
-        else if (total <= 4000) totalWarmDown = 200
-        else                    totalWarmDown = 300
-        let totalMainSet = total - totalWarmUp - totalWarmDown
-        let workout = [];
-        workout = randomWarmupExercise(totalWarmUp);
-        workout += randomMainSetExerciseEq(totalMainSet, isPully , isKick, isPaddles, isFins);
-        workout += randomWarmdownExercise(totalWarmDown);
-    
-        return workout;
-    }
-    catch(error){
+
+    catch (error) {
         logger.error(`error of randomExercise ${error}`);
-        return res.status(400).json({error});
+        return res.status(400).json({ error });
     }
-
 }
 
-const sendParamsRandom = async function(req, res){
-    try{
+const sendParamsRandom = async function (req, res) {
+    try {
         logger.info('random');
         logger.debug(req.body);
         let distance = req.body.distance;
@@ -293,14 +232,45 @@ const sendParamsRandom = async function(req, res){
         let isHandPaddles = req.body.isHandPaddles;
         let isKickBoard = req.body.isKickBoard;
         logger.debug(`distance: ${distance} , isFins: ${isFins} , isPullbuoy: ${isPullbuoy} , isHandPaddles: ${isHandPaddles} , isKickBoard: ${isKickBoard} ,`);
-        let workout = randomExercise(distance, isPullbuoy , isKickBoard, isHandPaddles, isFins);
-        logger.warn(workout);
-        return res.status(200).json({msg: 'random ok', workout});
+
+        // relation 1,3,1
+        let warmupDis = distance * 0.2;
+        let mainsetDis = distance * 0.6;
+        let warmdownDis = distance * 0.2;
+
+        // Gets random warm up
+        let workout = await randomExercises(warmupDis, 'Warm up');
+        logger.info(`warmup function done`);
+        
+        // Gets random main set
+        let workout2 = await randomExercises(mainsetDis, 'Main set');
+        workout2.forEach(element => {
+            workout.push(element);
+        });
+        //workout.push(await randomExercises(mainsetDis, 'Main set'));
+        logger.info(`mainset function done`);
+
+        // Gets random warm down
+        let workout3 = await randomExercises(warmdownDis, 'Swim Down');
+        workout3.forEach(element => {
+            workout.push(element);
+        });
+        logger.info(`warmdown function done`);
+
+        
+
+        // logger.debug(`The workout: `);
+        // workout.forEach(exer2 => {
+        //     logger.warn(exer2);
+        // });
+
+        return res.status(200).json( workout );
     }
     catch (error) {
         logger.error(`random - ${error}`);
-        return res.status(400).json({error});
+        return res.status(400).json({ error });
     }
 }
+
 
 module.exports =  { middlewareExcerciseId, getAllexcercises, getExcercise, createExcercise, updateExcercise, deleteExcercise, getByStep, sendParamsRandom  };
